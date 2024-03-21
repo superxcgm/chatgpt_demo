@@ -1,0 +1,25 @@
+1. You are an experienced NodeJs developer, and I want you to help me to build a REST API by using NodeJs.
+
+First, let's create a skeleton of the REST API: it contains following endpoints:
+
+POST /meetups
+GET /meetups
+PATCH / meetups/<id>
+DELETE / meetups/<id>
+Just add dummy logic to these API endpoints, we will add it later.
+
+2. Next, let's update the 'POST /meetups' API, every meetup has an id, title, summary & address. And we should stored the meetups in a 'meetups.json' file
+
+3. Could you finish the function of generateUniqueId, also we need to check request body contains meetup detail (id, title, summary and address), complain if any of these filed missing, and ignore other fields.
+
+4. Could you contains the id of created meetup in the response of 'POST /meetups'?
+
+5. Now let's update the endpoint of 'PATCH /meetups/:id'
+
+6. Now let's add some auth functionality, we need a 'POST /signup' & 'POST login' routes.
+* In API endpoint 'POST /signup', user can signup with username and password, username can only contains lowercase letter, and 8~20 characters long. We should stored username and password in file 'users.json', and the password should be encrypted.
+* In API endpoint 'POST /login', we should return JWT code in the response if username and password are correct.
+
+Last, we should protect all routes except for 'GET /meetups'.
+
+7. Todo: error handling, split the logic to multiple file instead of pack in one single app.js
